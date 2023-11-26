@@ -1,0 +1,9 @@
+.DS_Store
+.byebug_history
+results/screenshots/test_failed/*
+results/screenshots/test_passed/*
+vendor
+*.html
+*.png
+.ruby-version
+Gemfile.lock
