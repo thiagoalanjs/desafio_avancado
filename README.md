@@ -1,10 +1,8 @@
 ## Projeto de automação de teste com Ruby, Cucumber e o framework capybara ##
 
-Esse repositório contém um projeto de automação de testes que roda 3 features no site https://www.demoblaze.com/, são elas:
+Esse repositório contém um projeto de automação de testes que roda a feature no site do google a amazon:
 
-1) "criacao_conta.feature" - testes realizados na sessão  'Sign Up' 
-2) "carrinho_compras.feature" - testes na funcionalidade do carrinho de compras
-3) "login.feature" - testes realizados na tela de login contendo cenários positivos e negativos.
+ "busca_produtos.feature" - Realiza testes buscando por produtos 
 
 ### Instalação do ruby e dependências no Windows ###
 
@@ -129,7 +127,7 @@ Bundle updated!
 
 3) Enfim para executar a automação é só executar o comando 'cucumber' para rodar todos os cenários ou também cucumber -t<@cenário_da_feature> para rodar alguma cenário separado
 ```shell
-    cucumber -t@login
+    cucumber -t@busca
 ```
 ![image](https://github.com/thiagoalanjs/demoblazer_bdd_ruby/assets/32438113/b19ec85c-a648-4cfa-8bc5-f981c518a376)
 
@@ -137,4 +135,19 @@ Bundle updated!
 
 Para ver o relatório de testes e checar os cenários que passaram ou não é só abrir o arquivo report.html que está está na pasta /result :
 
-![image](https://github.com/thiagoalanjs/demoblazer_bdd_ruby/assets/32438113/26c72f6c-59c8-4c4f-a399-a87aa666045a)
+![image](https://github.com/thiagoalanjs/desafio_avancado/assets/32438113/f2fd3dfb-963c-437a-8c80-6b1d717b3c32)
+
+
+#### Observações ####
+
+OBS 1.: No cenário que avaliamos o percentual de prondutos e tem que retornar 80% de produto Iphone está quebrando pois só retorna certa de 55%
+
+![image](https://github.com/thiagoalanjs/desafio_avancado/assets/32438113/c9fd2ec3-70d1-433c-8c63-512425eeae57)
+
+OBS.: No cenário da conversão de de BRL para USD onde não deveria passar de U$2000 o teste também quebra pelo motivo de um valor creio eu que cadastrado erroneamente em pronduto da amazon:
+
+![image](https://github.com/thiagoalanjs/desafio_avancado/assets/32438113/fcd7689a-5014-4fe2-abca-d5afb6a082da)
+
+![image](https://github.com/thiagoalanjs/desafio_avancado/assets/32438113/2ec75a7f-d519-4508-802e-bb550b41ccfa)
+
+
