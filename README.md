@@ -1,6 +1,6 @@
 ## Projeto de automação de teste com Ruby, Cucumber e o framework capybara ##
 
-Esse repositório contém um projeto de automação de testes que roda a feature no site do google a amazon:
+Esse repositório contém um projeto de automação de testes que roda a feature no site do google e amazon:
 
  "busca_produtos.feature" - Realiza testes buscando por produtos 
 
