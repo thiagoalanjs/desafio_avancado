@@ -4,6 +4,9 @@ require 'byebug'
 require 'selenium-webdriver'
 require 'site_prism'
 require 'rspec'
+require 'faker'
+require 'json'
+require 'restclient'
 require_relative 'helper.rb'
 require_relative 'page_helper.rb'
 
@@ -15,7 +18,6 @@ HEADLESS = ENV['HEADLESS']
 
 CONFIG = YAML.load_file(File.dirname(__FILE__) + "/config/#{ENVIRONMENT_TYPE}.yml")
 
-## register driver according with browser chosen
 Capybara.register_driver :selenium do |app|
   if HEADLESS.eql?('headless')
     option = ::Selenium::WebDriver::Chrome::Options.new(args: ['--headless', '--disable-gpu', '--window-size=1600,1024'])
