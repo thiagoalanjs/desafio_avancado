@@ -126,7 +126,7 @@ Bundle updated!
 2) Devemos baixar também o chromedriver no site https://chromedriver.chromium.org/downloads, após descompactar o arquivo deverá ficar na pasta /usr/local/bin/
 
 3) Enfim para executar a automação é só executar o comando 'cucumber' para rodar todos os cenários ou também cucumber -t<@cenário_da_feature> para rodar alguma cenário separado
-```shell
+
 
 #### Analisando o relatório de testes ####
 
