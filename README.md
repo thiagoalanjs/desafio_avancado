@@ -127,9 +127,6 @@ Bundle updated!
 
 3) Enfim para executar a automação é só executar o comando 'cucumber' para rodar todos os cenários ou também cucumber -t<@cenário_da_feature> para rodar alguma cenário separado
 ```shell
-    cucumber -t@busca
-```
-![image](https://github.com/thiagoalanjs/demoblazer_bdd_ruby/assets/32438113/b19ec85c-a648-4cfa-8bc5-f981c518a376)
 
 #### Analisando o relatório de testes ####
 
